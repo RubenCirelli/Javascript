@@ -1,2 +1,6 @@
-# Javascript
-I lavori in questa repository saranno orientante nei lavori di javascript, verranno elencati in ordine di disposizione della piattaforma (esempio: il primo esercizio avrà il branch chiamato Esercizio1).
+# Classes
+
+Define a class called `Person` that takes in two arguments (`firstName` and `lastName`) in the constructor.
+
+const developer = new Person('Mario', 'Rossi');
+console.log(developer.firstName + " " + developer.lastName);
