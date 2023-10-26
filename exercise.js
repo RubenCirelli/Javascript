@@ -1,7 +1,8 @@
 function uncompletedNotes(notes) {
-  var result = [];
-  notes.forEach(element => {
-    result = notes.filter(notes.todos.done == false)
+  let result = [];
+  notes.forEach(note=> {
+    const uncompletedTodos = note.todos.filter(todo => todo.done === false);
+    result.push(...uncompletedTodos);
   });
   return result;
 }
