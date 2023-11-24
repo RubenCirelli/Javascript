@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <label>First Name:</label>
+          <input type="text" class="form-input" id="firstName" value="Mario"/>
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input type="text" class="form-input" id="lastName" value="Rossi"/>
+        </div>
+        <div>
+          <label>Age:</label>
+          <input type="number" class="form-input" id="age" value="25"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  // const inputs = document.querySelectorAll("input");
+  // console.log(inputs);
+  // let person = {}
+  // inputs.forEach((element) => {
+  //   person[element.previousElementSibling.innerHTML] = element.value;
+  //   document
+  //     .querySelector("form")
+  //     .setAttribute("data-person", JSON.stringify(person));
+  // });
+  // console.log(person)
+
+  // let label = document.querySelectorAll("label")
+  // let input = document.querySelectorAll("input")
+  // var inputs = document.getElementsByTagName('input');
+  // var labels = document.getElementsByTagName('label');
+  var inputs = document.querySelectorAll('input');
+  var labels = document.querySelectorAll('label');
+
+  for (var i = 0; i < inputs.length; i++) {
+    console.log(labels[i].textContent + ' ' + inputs[i].value);
+  }
+</script>
