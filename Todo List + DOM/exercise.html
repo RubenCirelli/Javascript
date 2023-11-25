@@ -19,9 +19,11 @@ async function displayTodos() {
 
     const ul = document.querySelector('.todo-list');
     ul.innerHTML = ''; 
+        todos.forEach(todo => {
         const li = document.createElement('li');
-        li.textContent = todos.title;
+        li.textContent = todo.title;
         ul.appendChild(li);
+    });
 }
 
 displayTodos();
